@@ -3,3 +3,28 @@
     src:
         url(../fonts/Norse-Bold.otf) format("opentype");
 }
+
+:root {
+    --button-clr: #596D48;
+    --input-border-clr: #E5E7EB;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    background-image: url(../img/grass-backdrop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.right {
+    background-color: black;
+    width: 60vw;
+}
+
