@@ -54,7 +54,7 @@ em {
 }
 
 .form-top > * {
-    padding-top: 10rem;
+    padding-top: 6rem;
     padding-bottom: 4rem;
 }
 
@@ -74,7 +74,7 @@ em {
 }
 
 .form-grouping > div:first-child {
-    margin-right: 6rem;
+    margin-right: 3rem;
 }
 
 .text-light {
