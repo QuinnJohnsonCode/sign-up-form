@@ -11,6 +11,7 @@
     --form-base-clr: #F9FAFB;
     --form-widget-clr: #FFF;
     --form-base-text-clr: #222;
+    --form-label-clr: #555;
 }
 
 em {
@@ -52,34 +53,81 @@ em {
     padding-right: 15rem; 
 }
 
-.form-top {
+.form-top > * {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
 }
 
 .form-middle {
     background-color: var(--form-widget-clr);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .form-bottom {
+    padding-top: 1.5rem;
 }
 
 .form-grouping > div {
     float: left;
+    padding-top: 1.25rem;
 }
 
 .form-grouping > div:first-child {
     margin-right: 6rem;
 }
 
+.text-light {
+    font-weight: 500;
+}
+
 input, label {
     display: block;
 }
 
+input {
+    border: 1px solid var(--input-border-clr);
+    border-radius: 5px;
+
+    font-size: 1.1rem;
+    min-height: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+input:not([type="submit"]) {
+    padding-left: 6px;   
+}
+
+input[type="submit"] {
+    background-color: var(--button-clr);
+    color: #FFF;
+    font-weight: 700;
+
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input:invalid {
+    border-color: red;
+}
+
 label {
     text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: .1rem;
+    color: var(--form-label-clr);
 }
 
 br {
     clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: var(--button-clr);
 }
 
 
