@@ -114,6 +114,20 @@ input:invalid {
     border-color: red;
 }
 
+input:invalid + div::after  {
+    color: red;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+input[type="email"]:invalid + div::after {
+    content: "* Please enter email in format: name@example.com";
+}
+
+input#password:invalid + div::after {
+    content: "* Passwords do not match";
+}
+
 label {
     text-transform: uppercase;
     font-size: 0.8rem;
