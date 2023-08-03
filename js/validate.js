@@ -11,10 +11,5 @@ const checkPassword = function() {
     }
 }
 
-password.addEventListener("input", (event) => {
-    checkPassword();
-});
-
-confirmPassword.addEventListener("input", (event) => {
-    checkPassword();
-});
+password.addEventListener("input", checkPassword)
+confirmPassword.addEventListener("input", checkPassword)
